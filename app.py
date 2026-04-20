@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-app = FasAPI(title="House Price Predictor")
+app = FastAPI(title="House Price Predictor")
 
 model = joblib.load("house_model.pkl")
 model_columns = joblib.load("model_columns.pkl")
